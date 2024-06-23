@@ -5,7 +5,7 @@ import pandas as pd
 # Function to load the machine learning model
 def load_model():
     try:
-        model = joblib.load('C:/Users/HP/Downloads/heart.sav')
+        model = joblib.load('heart.sav')
         return model
     except Exception as e:
         st.error(f"Error loading model: {e}")
